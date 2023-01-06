@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/odin-memory-card/static/css/main.330372fc.css",
+    "main.js": "/odin-memory-card/static/js/main.07fe5403.js",
+    "static/js/787.66bce2f0.chunk.js": "/odin-memory-card/static/js/787.66bce2f0.chunk.js",
+    "static/media/ren.png": "/odin-memory-card/static/media/ren.1e0db0d7728d2f3577e4.png",
+    "static/media/chewbacca.png": "/odin-memory-card/static/media/chewbacca.d35049646c08b8252f16.png",
+    "static/media/leia.png": "/odin-memory-card/static/media/leia.a13d3abc3315559bdb3f.png",
+    "static/media/obiwan.png": "/odin-memory-card/static/media/obiwan.5402d34ea8df89b36566.png",
+    "static/media/stormtrooper.png": "/odin-memory-card/static/media/stormtrooper.b040448502e889575996.png",
+    "static/media/bb8.png": "/odin-memory-card/static/media/bb8.317321ffe3b0824555e1.png",
+    "static/media/finn.png": "/odin-memory-card/static/media/finn.412d8f987523d50b7774.png",
+    "static/media/c3po.png": "/odin-memory-card/static/media/c3po.d81a815cd9293e40c164.png",
+    "static/media/solo.png": "/odin-memory-card/static/media/solo.b5a84354c4011e1336ff.png",
+    "static/media/r2d2.png": "/odin-memory-card/static/media/r2d2.b73e16dc53a2088f71df.png",
+    "index.html": "/odin-memory-card/index.html",
+    "main.330372fc.css.map": "/odin-memory-card/static/css/main.330372fc.css.map",
+    "main.07fe5403.js.map": "/odin-memory-card/static/js/main.07fe5403.js.map",
+    "787.66bce2f0.chunk.js.map": "/odin-memory-card/static/js/787.66bce2f0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.330372fc.css",
+    "static/js/main.07fe5403.js"
+  ]
+}
