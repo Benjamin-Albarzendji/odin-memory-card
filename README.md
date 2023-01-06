@@ -4,7 +4,7 @@
 
 <img src="src/img/README/README.png" alt="drawing" width="800" style = "border-radius: 15px"/>
 
-## Access the page [here](https://benjamin-albarzendji.github.io/odin-cv-app/)
+## Access the page [here](https://benjamin-albarzendji.github.io/odin-memory-card/)
 
 ### Description
 
