@@ -1,4 +1,4 @@
-# odin-weather-app
+# odin-memory-card
 
 ### Memory Card Game
 
