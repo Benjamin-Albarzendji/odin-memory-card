@@ -23,31 +23,46 @@ const Cards = (props) => {
     { src: obiwan, name: 'Obi-Wan', key: 'obi' },
     { src: r2d2, name: 'R2-D2', key: 'r2' },
     { src: ren, name: 'Kylo-Ren', key: 'ren' },
-    { src: solo, name: 'Han Solo', key: "solo" },
+    { src: solo, name: 'Han Solo', key: 'solo' },
     { src: stormtrooper, name: 'Stormtrooper', key: 'trooper' },
   ]);
 
-  // This forces the UI to update, and is only there for that purpose
+  // State array for the avatars to check if an avatar has already been clicked
   const [clickedAvatars, setClickedAvatars] = useState([]);
 
-  let test = props.testing
-  test()
-
+  // Handles the click
   const handleClick = (e) => {
-    console.log(e.target.id);
-    let array = cards;
+    // Shuffles the cards array
+    let array = [...cards];
     for (let i = array.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [array[i], array[j]] = [array[j], array[i]];
     }
-
     setCards((a) => array);
 
-    // This forces the UI to update
-    let tempClicked = clickedAvatars;
-    tempClicked.push(e.target.id)
+    // Pushes to the duplicate array
+    let tempClicked = [...clickedAvatars, e.target.id];
     setClickedAvatars(tempClicked);
   };
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const dupeChecker = (clickedAvatars) => {
+    const arraySet = new Set(clickedAvatars);
+    if (arraySet.size !== clickedAvatars.length) {
+      return true;
+    }
+  };
+
+  useEffect(() => {
+    if (clickedAvatars.length >= 1) {
+      if (dupeChecker(clickedAvatars)) {
+        setClickedAvatars([]);
+        props.newRound();
+      } else {
+        props.setCurrentScore();
+      }
+    }
+  }, [clickedAvatars]);
 
   return (
     <div className="cardsContainer">

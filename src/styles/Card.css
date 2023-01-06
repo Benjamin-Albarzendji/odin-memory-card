@@ -8,17 +8,28 @@
 }
 
 .Card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
   width: 15%;
   height: 25%;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   cursor: pointer;
-  background: black;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
 .Card:hover {
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.Card:active {
+  transform: scale(0.9);
+  transition: 0.3s;
 }
 
 .Card img {
