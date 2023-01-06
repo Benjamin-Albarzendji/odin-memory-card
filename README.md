@@ -1,6 +1,6 @@
 # odin-weather-app
 
-### Interactable CV document
+### Memory Card Game
 
 <img src="src/img/README/README.png" alt="drawing" width="800" style = "border-radius: 15px"/>
 
